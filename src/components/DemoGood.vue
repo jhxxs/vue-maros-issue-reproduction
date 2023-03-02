@@ -5,12 +5,14 @@
 
     <p>
       <!-- F12 可以正常跳转 -->
-      {{ a }}
+      {{ a }}, {{ b }}
     </p>
   </div>
 </template>
 
 <script setup lang="ts">
+import { b } from "@/utils"
+
 const props = withDefaults(
   defineProps<{
     /** 显示值 */

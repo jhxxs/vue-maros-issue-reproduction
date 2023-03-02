@@ -33,9 +33,6 @@
   "exclude": ["node_modules", "dist", "dist*"],
   "vueCompilerOptions": {
     "target": 2.7,
-    "plugins": [
-      "@vue-macros/volar/define-model",
-      "@vue-macros/volar/define-slots"
-    ]
+    "plugins": ["@vue-macros/volar/define-model"]
   }
 }

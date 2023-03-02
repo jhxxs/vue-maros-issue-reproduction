@@ -4,12 +4,14 @@
     {{ value }}
     <p>
       <!-- 'cmd + 鼠标左键'没有光标没有变✋🏻，而且也无法跳转， F12也是  -->
-      {{ a }}
+      {{ a }}, {{ b }}
     </p>
   </div>
 </template>
 
 <script setup lang="ts">
+import { b } from "@/utils"
+
 const { value } = defineModel<{
   /** 显示值 */
   value?: string
